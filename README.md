@@ -1,3 +1,4 @@
+浏览地址demo:http://screen.huhaowb.com/#/screen
 # vue-screen
 
 ## Project setup
