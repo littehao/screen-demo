@@ -1,0 +1,35 @@
+$redTheme: (
+  /**主要颜色*/
+  mainColor: #ae3737,
+  bgColor: #f5f5f5,
+  textColor: #111,
+  mainTextColor: #ae3737,
+  whiteColor: #fff,
+  blackColor: #000,
+  borderColor: #ae3737,
+  shadowColor: #ccc,
+
+  /**table配置颜色*/
+  tableBg: #f2f2f2,
+  tableBorderColor: #e4e4e4,
+
+  /**顶部header配置颜色*/
+  titleColor: #ffd04b,
+  menuTextColor: #fff,
+  menuActive:#ffd04b,
+
+  /**按钮配色*/
+  btnColor: #ae3737,
+
+  /**大屏主题颜色*/
+  screenBgColor:#f5f5f5,
+  screenWhiteBg:#fff,
+  screenBoxShadow:#ae3737,
+  screenBoxBorderColorApla:rgba(174, 55, 55, 0.25),
+  screenBoxBorderColor:#ae3737,
+  screenWhiteColor: #ae3737,
+  screenHeaderRightBgImg:'../img/scale/red_header_right.jpg',
+  screenHeaderCenterBgImg:'../img/scale/red_header_center.jpg',
+  screenHeaderLeftBgImg:'../img/scale/red_header_left.jpg',
+  screenMapBgImg:'../img/scale/mapbg.png',
+);

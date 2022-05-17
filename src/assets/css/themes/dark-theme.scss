@@ -1,0 +1,35 @@
+$darkTheme: (
+  /**主要颜色*/
+  mainColor: #191e2e,
+  bgColor: #191e2e,
+  textColor: #ffffff,
+  mainTextColor: #ffffff,
+  whiteColor: #fff,
+  blackColor: #000,
+  borderColor: #373d4e,
+  shadowColor: #000,
+
+  /**table配置颜色*/
+  tableBg: #151927,
+  tableBorderColor: #303b5d,
+
+  /**顶部header配置颜色*/
+  titleColor: #87cecb,
+  menuTextColor: #fff,
+  menuActive:#ffd04b,
+
+  /**按钮配色*/
+  btnColor: #ffd04b,
+
+  /**大屏主题颜色*/
+  // screenBgColor:#f5f5f5,
+  // screenWhiteBg:#fff,
+  // screenBoxShadow:#122f85,
+  // screenBoxBorderColorApla:rgba(18, 47, 133, 0.25),
+  // screenBoxBorderColor:#122f85,
+  // screenWhiteColor: #122f85,
+  screenHeaderRightBgImg:'../img/scale/header_right.png',
+  screenHeaderCenterBgImg:'../img/scale/header_middle.png',
+  screenHeaderLeftBgImg:'../img/scale/header_left.png',
+  screenMapBgImg:'../img/scale/mapbg.png',
+);

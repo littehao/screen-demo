@@ -1,0 +1,756 @@
+.el-main {
+  @include themeify {
+    background: themed("bgColor");
+    box-shadow: inset 0px 0px 20px themed("shadowColor");
+  }
+}
+
+// .el-select 样式
+.el-select {
+  width: 100%;
+}
+
+.el-select-dropdown {
+  @include themeify {
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-select .el-input.is-disabled .el-input__inner:hover,
+.el-select .el-input.is-focus .el-input__inner,
+.el-select .el-input__inner:focus,
+.el-select:hover .el-input__inner {
+  @include themeify {
+    border-color: lighten(themed("mainColor"), 10%);
+  }
+}
+
+.el-select-dropdown__item.selected {
+  @include themeify {
+    color: themed("mainTextColor");
+  }
+}
+
+.el-select-dropdown__item {
+  @include themeify {
+    color: themed("textColor");
+  }
+
+  &.hover {
+    @include themeify {
+      color: mix(themed("textColor"), themed("borderColor"), 10%);
+    }
+  }
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after,
+.el-popper[x-placement^=bottom] .popper__arrow {
+  @include themeify {
+    border-bottom-color: themed("borderColor");
+  }
+}
+
+/*input*/
+.el-textarea .el-input__count {
+  @include themeify {
+    color: themed('textColor');
+    background: themed("bgColor");
+  }
+}
+
+.el-input__inner,
+.el-textarea__inner {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+
+  &:hover,
+  &:focus {
+    @include themeify {
+      border-color: lighten(themed("mainColor"), 10%);
+    }
+  }
+}
+
+.el-input.is-disabled .el-input__inner {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-textarea.is-disabled .el-textarea__inner {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-input-number__decrease,
+.el-input-number__increase {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+  }
+}
+
+.el-input-number__decrease:hover:not(.is-disabled)~.el-input .el-input__inner:not(.is-disabled),
+.el-input-number__increase:hover:not(.is-disabled)~.el-input .el-input__inner:not(.is-disabled) {
+  @include themeify {
+    border-color: lighten(themed("mainColor"), 10%);
+  }
+}
+
+.el-input-number__decrease:hover,
+.el-input-number__increase:hover {
+  @include themeify {
+    color: themed("mainTextColor");
+  }
+}
+
+.el-input-number__decrease {
+  @include themeify {
+    border-right: 1px solid themed("borderColor");
+  }
+}
+
+.el-input-number.is-disabled .el-input-number__decrease,
+.el-input-number.is-disabled .el-input-number__increase {
+  @include themeify {
+    border-color: themed("borderColor");
+  }
+}
+
+.el-input-number__increase {
+  @include themeify {
+    border-left: 1px solid themed("borderColor");
+  }
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+  @include themeify {
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+    color: themed("textColor");
+  }
+
+  .el-button.el-button--primary {
+    @include themeify {
+      border: none
+    }
+  }
+}
+
+// 时间选择器
+.el-time-panel,
+.el-picker-panel {
+  @include themeify {
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+    color: themed("textColor");
+  }
+}
+
+.el-range-editor.is-active,
+.el-range-editor.is-active:hover {
+  @include themeify {
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-button.is-plain:focus,
+.el-button.is-plain:hover {
+  @include themeify {
+    color: themed("btnColor");
+    background: none;
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-picker-panel__footer {
+  @include themeify {
+    background: themed("bgColor");
+    border-top-color: themed("borderColor");
+    color: themed("textColor");
+  }
+}
+
+.el-date-range-picker__time-header,
+.el-date-range-picker__content.is-left,
+.el-date-table th {
+  @include themeify {
+    color: themed("textColor");
+    border-color: themed("borderColor");
+  }
+}
+
+.el-date-table td.in-range {
+  @include themeify {
+    color: themed("whiteColor");
+  }
+}
+
+.el-date-table td.start-date span,
+.el-date-table td.end-date span {
+  @include themeify {
+    color: themed("mainTextColor");
+    background: themed("bgColor");
+  }
+}
+
+.el-date-table td.available:hover,
+.el-date-table td.today.end-date span,
+.el-date-table td.today.start-date span,
+.el-date-table td.today span {
+  @include themeify {
+    color: themed("mainTextColor");
+  }
+}
+
+.el-date-table td.in-range div,
+.el-date-table td.in-range div:hover,
+.el-date-table.is-week-mode .el-date-table__row.current div,
+.el-date-table.is-week-mode .el-date-table__row:hover div {
+  @include themeify {
+    background: lighten(themed("mainColor"), 10%);
+  }
+}
+
+
+.el-date-editor .el-range-separator {
+  @include themeify {
+    color: themed("textColor");
+  }
+}
+
+.el-date-editor .el-range-input {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+  }
+}
+
+.el-picker-panel__sidebar {
+  @include themeify {
+    background: themed("bgColor");
+    border-right: 1px solid themed("borderColor");
+  }
+
+  .el-picker-panel__shortcut {
+    @include themeify {
+      color: themed("textColor");
+    }
+  }
+}
+
+
+/* Table*/
+.el-table {
+  background: transparent !important;
+
+  th {
+    @include themeify {
+      color: themed("textColor");
+      border-bottom: 1px solid themed("tableBorderColor") !important;
+    }
+  }
+
+  td {
+    @include themeify {
+      color: themed("textColor");
+      background: themed("tableBg");
+    }
+  }
+}
+
+.el-table__body tr.hover-row.current-row>td.el-table__cell,
+.el-table__body tr.hover-row.el-table__row--striped.current-row>td.el-table__cell,
+.el-table__body tr.hover-row.el-table__row--striped>td.el-table__cell,
+.el-table__body tr.hover-row>td.el-table__cell {
+  @include themeify {
+    background: lighten(themed("tableBg"), 10%);
+  }
+}
+
+.el-table th,
+.el-table th.el-table__cell,
+.el-table thead.is-group th.el-table__cell {
+  @include themeify {
+    background: darken(themed("tableBg"), 8%);
+  }
+}
+
+.el-table--group,
+.el-table--border,
+.el-table--border th,
+.el-table--border td,
+.el-table td.el-table__cell {
+  @include themeify {
+    border-color: themed("tableBorderColor");
+  }
+}
+
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before,
+.el-table__fixed-right::before,
+.el-table__fixed::before {
+  @include themeify {
+    background: themed("tableBorderColor");
+  }
+}
+
+.el-table__fixed-right-patch {
+  @include themeify {
+    background: darken(themed("tableBg"), 8%);
+    border-bottom: 1px solid darken(themed("tableBg"), 8%);
+  }
+}
+
+// dialog 对话框
+.el-dialog {
+  @include themeify {
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-dialog__title {
+  @include themeify {
+    color: themed("textColor");
+  }
+}
+
+.el-dialog__headerbtn {
+
+  .el-dialog__close,
+  .el-icon-full-screen,
+  .el-icon-crop {
+    @include themeify {
+      color: themed("textColor") !important;
+    }
+
+    &:hover {
+      @include themeify {
+        color: themed("mainTextColor") !important;
+      }
+    }
+  }
+
+}
+
+.el-dialog__body {
+  @include themeify {
+    color: themed("textColor");
+  }
+}
+
+// form表单
+.el-form-item__label {
+  @include themeify {
+    color: themed("textColor");
+  }
+}
+
+// 按钮
+
+.el-button.el-button--primary {
+  @include themeify {
+    color: themed("whiteColor");
+    background: themed("mainColor");
+    border: 1px solid themed("borderColor");
+  }
+
+  &:hover {
+    @include themeify {
+      background: lighten(themed("mainColor"), 10%);
+    }
+  }
+}
+
+.el-button--text {
+  @include themeify {
+    color: themed("btnColor");
+  }
+}
+
+.el-button.el-button--text:focus,
+.el-button.el-button--text:hover {
+  @include themeify {
+    color: lighten(themed("btnColor"), 20%);
+  }
+}
+
+.el-button {
+  @include themeify {
+    border-color: themed("borderColor");
+  }
+}
+
+.el-button.el-button--default:focus,
+.el-button.el-button--default:hover {
+  @include themeify {
+    color: themed("btnColor");
+    background: lighten(themed("mainColor"), 60%);
+    border-color: themed("borderColor");
+  }
+}
+
+.el-button--text,
+.el-button--text.is-disabled,
+.el-button--text.is-disabled:focus,
+.el-button--text.is-disabled:hover,
+.el-button--text:active {
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+
+// 消息弹窗
+.el-message-box {
+  @include themeify {
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-message-box__title {
+  @include themeify {
+    color: themed("textColor");
+  }
+}
+
+.el-message-box__content {
+  @include themeify {
+    color: themed("textColor");
+  }
+}
+
+// 分页
+
+.el-pagination {
+  span {
+    @include themeify {
+      color: themed("textColor");
+    }
+  }
+
+  .btn-prev,
+  .btn-next {
+    @include themeify {
+      background: themed("bgColor");
+      color: themed("textColor");
+    }
+  }
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  @include themeify {
+    background: themed("mainColor");
+    color: themed("whiteColor");
+  }
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  @include themeify {
+    color: themed("mainTextColor");
+  }
+}
+
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .el-pager li {
+  @include themeify {
+    background: themed("bgColor");
+    color: themed("textColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-pager {
+  li {
+    @include themeify {
+      background: themed("bgColor");
+      color: themed("textColor");
+    }
+  }
+}
+
+// 单选多选框
+.el-checkbox__inner {
+  @include themeify {
+    background: themed("bgColor");
+  }
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  @include themeify {
+    background: lighten(themed("mainColor"), 10%);
+    border-color: lighten(themed("mainColor"), 10%);
+  }
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  @include themeify {
+    color: themed("blackColor");
+  }
+}
+
+.el-radio-button:first-child .el-radio-button__inner {
+  @include themeify {
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+  @include themeify {
+    background: themed("mainColor");
+    border: 1px solid themed("borderColor");
+    box-shadow: -1px 0 0 0 themed("borderColor");
+  }
+}
+
+.el-radio-button__inner:hover {
+  @include themeify {
+    color: themed("mainTextColor");
+  }
+}
+
+.el-radio-button__orig-radio:disabled:checked+.el-radio-button__inner {
+  @include themeify {
+    color: themed("whiteColor");
+    background: themed("mainColor");
+  }
+}
+
+.el-radio-button__inner,
+.el-radio-button__orig-radio:disabled+.el-radio-button__inner {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+// el-tree 树结构
+.el-tree {
+  @include themeify {
+    color: themed("textColor");
+    background: transparent;
+  }
+}
+
+.el-tree-node__content:hover {
+  @include themeify {
+    color: themed("textColor");
+    background: lighten(themed("tableBg"), 10%);
+  }
+}
+
+.el-tree-node__children .is-current> :first-child {
+  @include themeify {
+    background: themed("tableBg");
+  }
+}
+
+// vue-treeselect  树选择
+.el-main .vue-treeselect__control {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+}
+
+.el-main .vue-treeselect--focused:not(.vue-treeselect--open) .vue-treeselect__control,
+.el-main .vue-treeselect:not(.vue-treeselect--focused) .vue-treeselect__control:hover {
+  @include themeify {
+    border-color: lighten(themed("mainColor"), 10%);
+  }
+}
+
+.el-main .vue-treeselect__single-value {
+  @include themeify {
+    color: themed('textColor');
+  }
+}
+
+.vue-treeselect--open-below .vue-treeselect__menu {
+  @include themeify {
+    border-top-color: themed("borderColor");
+  }
+}
+
+.el-main .vue-treeselect__value-remove {
+  @include themeify {
+    color: themed("mainTextColor");
+  }
+}
+
+.el-main .vue-treeselect__multi-value-item {
+  @include themeify {
+    color: themed("mainTextColor");
+    background: lighten(themed("mainColor"), 60%);
+  }
+}
+
+.vue-treeselect__menu {
+  @include themeify {
+    color: themed("textColor");
+    background: themed("bgColor");
+    border: 1px solid themed("borderColor");
+  }
+
+  .vue-treeselect__checkbox--indeterminate,
+  .vue-treeselect__checkbox--checked {
+    @include themeify {
+      background: themed("mainColor");
+      border-color: themed("mainTextColor");
+    }
+  }
+
+  .vue-treeselect__option--highlight {
+    @include themeify {
+      color: themed("textColor");
+      background: lighten(themed("tableBg"), 10%);
+    }
+
+    .vue-treeselect__checkbox--checked {
+      @include themeify {
+        background: themed("mainColor");
+        border-color: themed("mainTextColor");
+      }
+    }
+
+    .vue-treeselect__checkbox--unchecked {
+      @include themeify {
+        border-color: themed("mainTextColor");
+      }
+    }
+  }
+}
+
+// 顶部导航栏
+.el-header {
+  @include themeify {
+    color: themed("textColor") !important;
+    background: themed("mainColor") !important;
+  }
+
+  .collapse-btn:hover {
+    @include themeify {
+      background: darken(themed("mainColor"), 5%) !important;
+    }
+  }
+
+  .title {
+    @include themeify {
+      color: themed("titleColor") !important;
+    }
+  }
+}
+
+.el-menu--popup-bottom-start {
+  @include themeify {
+    background: lighten(themed("mainColor"), 10%) !important;
+  }
+}
+
+.topbar {
+
+  .el-menu,
+  .el-submenu,
+  .el-submenu .el-submenu__title {
+    @include themeify {
+      color: themed("menuTextColor") !important;
+      background: themed("mainColor") !important;
+    }
+  }
+
+  .el-submenu.is-active .el-submenu__title {
+    @include themeify {
+      color: themed("menuActive") !important;
+      background: darken(themed("mainColor"), 5%) !important;
+      border-bottom-color: themed("menuActive") !important;
+    }
+  }
+}
+
+.right-menu {
+
+  .el-menu-item,
+  .el-submenu__title {
+    @include themeify {
+      color: themed("menuTextColor") !important;
+      background: themed("mainColor") !important;
+    }
+  }
+}
+
+.el-menu-item {
+  @include themeify {
+    color: themed("menuTextColor") !important;
+    background: lighten(themed("mainColor"), 10%) !important;
+  }
+
+  &.is-active {
+    @include themeify {
+      color: themed("menuActive") !important;
+    }
+  }
+}
+
+.el-menu-item i,
+.el-submenu__title i {
+  @include themeify {
+    color: themed("menuTextColor");
+  }
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  @include themeify {
+    background: themed("mainColor") !important;
+  }
+}
+
+
+// tabs
+.el-tabs__item.is-active {
+  @include themeify {
+    color: themed("mainTextColor");
+  }
+}
+
+.el-tabs__item {
+  @include themeify {
+    color: themed("textColor");
+  }
+}
+
+.el-tabs__item:hover {
+  @include themeify {
+    color: lighten(themed("mainTextColor"), 10%);
+  }
+}
+
+// card
+.el-card {
+  @include themeify {
+    color: themed("mainTextColor");
+    background: themed("tableBg");
+    border-color: themed("borderColor");
+  }
+
+  .login-title {
+    @include themeify {
+      color: themed("mainTextColor");
+    }
+  }
+}

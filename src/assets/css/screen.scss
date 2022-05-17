@@ -1,0 +1,55 @@
+.scale-page,
+.scale-page .el-main{
+ @include themeify {
+  background-color: themed("screenBgColor");
+ }
+}
+.GridLayout .item-box .content-box{
+ @include themeify {
+  background-color: themed("screenWhiteBg");
+ }
+}
+.screen-header .logo{
+ @include themeify {
+  background-image:url(themed("screenHeaderLeftBgImg"));
+ }
+}
+.screen-header .screen-main-box{
+ @include themeify {
+  background-image:url(themed("screenHeaderCenterBgImg"));
+ }
+}
+.screen-header .userinfo{
+ @include themeify {
+  background-image:url(themed("screenHeaderRightBgImg"));
+ }
+}
+.GridLayout .mapbg{
+ @include themeify {
+  background-image:none
+ }
+}
+
+.GridLayout .content-box{
+ @include themeify {
+  box-shadow: none;
+  border-color:themed("screenBoxBorderColorApla");
+  color:themed("screenWhiteColor")
+ }
+}
+.GridLayout .content-box::before,
+.GridLayout .content-box::after,
+.GridLayout .content-box> .border-content::before,
+.GridLayout .content-box> .border-content::after{
+ @include themeify {
+  border-color: themed("screenBoxBorderColor");
+ }
+}
+.content-card .card-title,
+.chart-container .card-title{
+ 
+ @include themeify {
+  background: none;
+  color: themed("screenWhiteColor");
+ }
+}

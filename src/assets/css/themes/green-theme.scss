@@ -1,0 +1,35 @@
+$greenTheme: (
+  /**主要颜色*/
+  mainColor: #009687,
+  bgColor: #f5f5f5,
+  textColor: #444,
+  mainTextColor: #009687,
+  whiteColor: #fff,
+  blackColor: #000,
+  borderColor: #009687,
+  shadowColor: #fff,
+
+  /**table配置颜色*/
+  tableBg: #fbfbfb,
+  tableBorderColor: #eee,
+
+  /**顶部header配置颜色*/
+  titleColor: #fff,
+  menuTextColor: #fff,
+  menuActive:#ffd04b,
+
+  /**按钮配色*/
+  btnColor: #009687,
+
+  /**大屏主题颜色*/
+  screenBgColor:#f5f5f5,
+  screenWhiteBg:#fff,
+  screenBoxShadow:#009687,
+  screenBoxBorderColorApla:rgba(0, 150, 135, 0.25),
+  screenBoxBorderColor:#009687,
+  screenWhiteColor: #009687,
+  screenHeaderRightBgImg:'../img/scale/green_header_right.jpg',
+  screenHeaderCenterBgImg:'../img/scale/green_header_center.jpg',
+  screenHeaderLeftBgImg:'../img/scale/green_header_left.jpg',
+  screenMapBgImg:'../img/scale/green_mapbg.png',
+);
